@@ -1,0 +1,91 @@
+:root {
+  --frist-color:#AA00FF;
+  --secund-color:#D80073;
+ --body-color:#0078D7;
+
+  --font-semi:600;
+
+  --mb-1:0.5rem;
+  --mb-2:1rem;
+  --mb-3:1.5rem;
+  --mb-4:2rem;
+  --mb-5:2.5rem;
+  --mb-6:3rem;
+
+  --font-body:"Roboto", sans-serif;
+
+  --normal-font-size:.985rem;
+  --h2-font-size:1.5rem;
+  --h3-font-size:1.25rem;
+  --big-font-size:2rem;
+
+}
+
+body.color {
+    --body-color:red;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  font-family:var(--font-body);
+  padding:0;
+  border:none;
+}
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:var(--body-color);
+  transition:.3s;
+}
+
+.main {
+  width:500px;
+  height:20vh;
+  position:relative;
+}
+
+.section__button{
+  position:relative;
+}
+
+.section__button button{
+  width:200px;
+  height:200px;
+  border:none;
+  padding:var(--mb-2);
+  font-size:var(--big-font-size);
+  cursor:pointer;
+  border-radius:30%;
+  color:white;
+  font-weight:var(--font-semi);
+  left:150px;
+  position:absolute;
+  transition:.3s;
+  top:0;
+}
+
+.active{
+  display:none;
+}
+.button__stop {
+  background-color:var(--secund-color);
+}
+
+.button__start {
+  background-color:var(--frist-color);
+}
+.audio {
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+#audio {
+  width:500px;
+}
+
+.hidden {
+  display:none;
+}

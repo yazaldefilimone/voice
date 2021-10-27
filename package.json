@@ -1,0 +1,11 @@
+{
+  "name": "voice",
+  "version": "0.0.1",
+  "description": "voice in nodejs",
+  "main": "index.js",
+  "scripts":{
+    "dev":"node ./index.js"
+  },
+  "author": "yazalde filimone",
+  "license": "MIT"
+}
